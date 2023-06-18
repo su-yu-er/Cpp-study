@@ -1,3 +1,7 @@
+## 普通函数与函数模板的调用规则
+
+
+
 ```c++
 #include<iostream>
 #include<algorithm>
@@ -44,4 +48,3 @@ int main()
 	return 0;
 }
 ```
-
