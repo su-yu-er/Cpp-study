@@ -210,3 +210,42 @@ int main()
 }
 ```
 
+
+
+## string比较
+
+```c++
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
+
+//stirng容器
+
+//string 字符串比较
+void test01() {
+	//对比ascll码
+	string s1 = "hallo";
+	string s2 = "hello";
+	int t = s1.compare(s2);
+	if (t == 0)
+		cout << "s1==s2" << endl;
+	else if (t > 0)
+		cout << "s1>s2" << endl;
+	else if (t < 0)
+		cout << "s1<s2" << endl;
+	else
+		cout << "s1!=s2" << endl;
+}
+
+int main()
+{
+	test01();
+	//test02();
+	return 0;
+}
+```
+
