@@ -47,3 +47,45 @@ int main()
 }
 ```
 
+
+
+
+
+## string容器初始化
+
+```c++
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
+
+//string容器初始化
+
+void test01()
+{
+	string s1;	//默认构造
+
+	//用c的字符串创建c++string
+	const char* str = "hello world!!";
+	string s2(str);
+	cout << s2 << endl;
+
+	//拷贝构造string
+	string s3(s2);
+	cout << "s3:" << s3 << endl;
+
+	//n个字符初始化string
+	string s4(10, 'c');
+	cout << "s4:" << s4 << endl;
+}
+
+int main()
+{
+	test01();
+	return 0;
+}
+```
+
